@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/happy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/imagePang"
+            android:layout_centerHorizontal="true"
+            android:background="#FFFFFF"
+            android:text="   H A P P Y B I R T H D A Y  "
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_margin="15dp"/>
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imagePang"
+            android:text="“May this birthday be the beginning of the best years of your life.”"
+            android:textSize="20sp"
+            android:background="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_margin="20dp"/>
+
+        <ImageView
+            android:id="@+id/imagePang"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/pang" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/imagePang"
+            android:layout_toRightOf="@id/happy"
+            android:src="@drawable/cake"
+            android:layout_margin="10dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/imagePang"
+            android:layout_toLeftOf="@id/happy"
+            android:src="@drawable/cake"
+            android:layout_margin="10dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/balloon"
+            android:layout_below="@id/text"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
